@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let age=+prompt("enter age : ")
+        let check=age>=18?"adult":"minor";
+        console.log(check);
+
+        let temparature=+prompt("enter a number")
+        let see=temparature>30?"hot":(temparature>20 && temparature<30)?"warm":(temparature>10 && temparature<19)?"cool":(temparature<10)?"cold":"colder";
+        console.log(see);
+
+        let num_input=+prompt("enter a number")
+        let num1_input=+prompt("enter a number")
+        console.log(num_input==num1_input);
+        console.log(num_input!=num1_input);
+        console.log(num_input!==num1_input);
+        console.log(num_input>num1_input);
+        console.log(num_input<num1_input);
+        console.log(num_input>=num1_input);
+        console.log(num_input<=num1_input);
+
+        let score=0-100;
+        let grades=score>=90?"A":score>=75?"B":score>=60?"C":score>=45?"D":score<45?"fail":"worst";
+        console.log(grades);
+
+        let agegroup=0-100;
+        let classify=(age>0 && age<12)?"child":(age>13 && age<19)?"teen":(age>20 && age<64)?"Adult":(age>65)?"senior":"senior citizen";
+            console.log(classify);
+
+    </script>
+    
+</body>
+</html>
